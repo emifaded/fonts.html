@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>fonts.html</title>
+    <meta charset="UTF-8">
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- javascript -->
+    <script src="scripts/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>𝕗𝕠𝕟𝕥𝕤.𝚑𝚝𝚖𝚕</h1>
+        <div class="rightheader">
+            <button class="headerbtns" onclick="resizeContent('decrease')">🔍︎ -</button>
+            <button class="headerbtns" onclick="resizeContent('increase')">🔍︎ +</button>
+            <button class="headerbtns" onclick="resizeContent('reset')">🔍︎ reset</button>
+        </div>
+    </header>
+    <div class="content">
+        <h2 class="modebtns">
+            ♥ <button class="h2menubtns" id="fontsBtn" onclick="selectMode(this.id)">Fonts</button> ♥
+            <button class="h2menubtns" id="symbolsBtn" onclick="selectMode(this.id)">Symbols</button> ♥
+            <button class="h2menubtns" id="emoticonsBtn" onclick="selectMode(this.id)">Emoticons</button> ♥
+        </h2>
+        <div class="inlinediv">
+            <p>emi's replacement for fonts.py (in the python folder)</p>
+            <button id="keyboardModeBtn" onclick="toggleKeyboardMode()">keyboard mode enabled</button> 
+            <p class="inlinedivtext" id="keyboardModeBtnText">any text typed will be automatically converted to desired font.</p>
+        </div> 
+        <br>
+        <!-- fonts selection -->
+        <div class="selectionbuttonsdiv activediv" id="fontselectdiv">
+            <button class="selectionbtn fontbtns" id="normalFontBtn" onclick="selectFont(this.id)">normal</button>
+            <button class="selectionbtn fontbtns" id="typeFontBtn" onclick="selectFont(this.id)">𝚝𝚢𝚙𝚎𝚠𝚛𝚒𝚝𝚎𝚛</button>
+            <button class="selectionbtn fontbtns" id="linesFontBtn" onclick="selectFont(this.id)">𝕝𝕚𝕟𝕖𝕤</button>
+            <button class="selectionbtn fontbtns" id="scriptFontBtn" onclick="selectFont(this.id)">𝓈𝒸𝓇𝒾𝓅𝓉</button>
+            <button class="selectionbtn fontbtns" id="scriptFontBoldBtn" onclick="selectFont(this.id)">𝓼𝓬𝓻𝓲𝓹𝓽</button>
+            <button class="selectionbtn fontbtns" id="serifFontBtn" onclick="selectFont(this.id)">𝐬𝐞𝐫𝐢𝐟</button>
+            <button class="selectionbtn fontbtns" id="serifFontItalicBtn" onclick="selectFont(this.id)">𝑠𝑒𝑟𝑖𝑓</button>
+            <button class="selectionbtn fontbtns" id="serifFontItalicBoldBtn" onclick="selectFont(this.id)">𝒔𝒆𝒓𝒊𝒇</button>
+            <button class="selectionbtn fontbtns" id="sansFontBtn" onclick="selectFont(this.id)">𝗌𝖺𝗇𝗌</button>
+            <button class="selectionbtn fontbtns" id="sansFontBoldBtn" onclick="selectFont(this.id)">𝘀𝗮𝗻𝘀</button>
+            <button class="selectionbtn fontbtns" id="sansFontItalicBtn" onclick="selectFont(this.id)">𝘴𝘢𝘯𝘴</button>
+            <button class="selectionbtn fontbtns" id="sansFontItalicBoldBtn" onclick="selectFont(this.id)">𝙨𝙖𝙣𝙨</button>
+            <button class="selectionbtn fontbtns" id="gothicFontBtn" onclick="selectFont(this.id)">𝔤𝔬𝔱𝔥𝔦𝔠</button>
+            <button class="selectionbtn fontbtns" id="gothicFontBoldBtn" onclick="selectFont(this.id)">𝖌𝖔𝖙𝖍𝖎𝖈</button>
+            <button class="selectionbtn fontbtns" id="circleFontBtn" onclick="selectFont(this.id)" style="font-size: 12px;">ⒸⒾⓇⒸⓁⒺ</button>
+            <button class="selectionbtn fontbtns" id="circleFilledFontBtn" onclick="selectFont(this.id)">🅒🅘🅡🅒🅛🅔</button>
+            <button class="selectionbtn fontbtns" id="squareFontBtn" onclick="selectFont(this.id)">🅂🅀🅄🄰🅁🄴</button>
+            <button class="selectionbtn fontbtns" id="squareFilledFontBtn" onclick="selectFont(this.id)">🆂🆀🆄🅰🆁🅴</button>
+            <button class="selectionbtn fontbtns" id="tinyFontBtn" onclick="selectFont(this.id)">ᵗⁱⁿʸ</button>
+        </div>
+        <!-- symbols selection -->
+        <div class="selectionbuttonsdiv" id="symbolselectdiv">
+            <input class="selectionbtn symbolbtns" id="searchBoxSymbols" type="text" placeholder="search...">
+            <button class="selectionbtn symbolbtns" onclick="clickSymbol(this)">♥</button>
+            <button class="selectionbtn symbolbtns" onclick="clickSymbol(this)">♫</button>
+            <button class="selectionbtn symbolbtns" onclick="clickSymbol(this)">❀</button>
+            <button class="selectionbtn symbolbtns" onclick="clickSymbol(this)">✧</button>
+        </div>
+        <!-- emoticons selection -->
+        <div class="selectionbuttonsdiv" id="emoticonselectdiv">
+            <input class="selectionbtn emoticonbtns" id="searchBoxEmoticons" type="text" placeholder="search...">
+            <button class="selectionbtn emoticonbtns" id="" onclick="clickEmoticon(this)">◕‿◕</button>
+            <button class="selectionbtn emoticonbtns" id="" onclick="clickEmoticon(this)">ʕ●.●ʔ</button>
+            <button class="selectionbtn emoticonbtns" id="" onclick="clickEmoticon(this)">【=◈︿◈=】</button>
+        </div>
+        <!-- the text field -->
+        <div class="fontarea">
+            <textarea id="textField" spellcheck="false"></textarea>
+        </div>
+        <br>
+        <div class="inlinediv">
+            <button id="copyAllBtn" onclick="copyAllText()">copy all</button>
+            <button id="clearBtn" onclick="clearText()">clear</button>
+        </div>
+        <p style="margin-bottom: 2pt;">𝐇𝐎𝐖 𝐓𝐎 𝐔𝐒𝐄 𝐅𝗢𝐍𝐓𝐒.𝐇𝐓𝐌𝐋:</p>
+        <ul>
+            <li>it is ideal that you use a computer to use fonts.html</li>
+            <li><samp>tab</samp> + <samp>←</samp> and <samp>tab</samp> + <samp>→</samp> to switch between fonts</li>
+            <li><samp>tab</samp> + <samp>↓</samp> to switch to normal font</li>
+            <li><samp>tab</samp> in search box to focus on the text area</li>
+            <li><samp>tab</samp> in text area to focus on the search box</li>
+        </ul>
+        <p style="margin-bottom: 2pt;">𝐏𝐎𝐓𝐄𝐍𝐓𝐈𝐀𝐋𝐋𝐘 𝐂𝐎𝐌𝐈𝐍𝐆 𝐅𝐄𝐀𝐓𝐔𝐑𝐄𝐒:</p>
+        <ul>
+            <li>view all fonts in font menu</li>
+            <li>view all symbols and emoticons via button</li>
+            <ul>
+                <li>we have a function <code style="cursor: pointer;" onclick="createAllSymbolsBtns()">createAllSymbolsBtns();</code> and <code style="cursor: pointer;" onclick="createAllEmoticonsBtns()">createAllEmoticonsBtns();</code>, just needs a button</li>
+            </ul>
+            <li>undo keyboard shortcut that actually works</li>
+        </ul>
+        <p>if you have any feedback or suggestions feel free to comment on <a href="https://github.com/emifaded" target="_blank">github.com/emifaded</a> ♥ (insert repository link)</p>
+    </div>
+</body>
+</html>

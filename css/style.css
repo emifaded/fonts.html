@@ -1,0 +1,225 @@
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    padding: 10px;
+    align-items: center;
+    box-sizing: border-box;
+    background-image: linear-gradient(180deg, white, #e2e2e2);
+    border-bottom: #c5c5c5 solid 1px;
+    z-index: 1;
+}
+h1 {
+    font-family: sans-serif;
+    font-size: 20pt;
+    font-weight: 130;
+}
+h2 {
+    font-weight: 130;
+}
+a {
+    color: #444444;
+}
+button {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border: solid 1px;
+    border-radius: 3px;
+    background: none;
+    outline: none;
+    outline-width: 0;
+    cursor: pointer;
+}
+button:hover {
+    border: 80%;
+    opacity: 80%;
+}
+code {
+    padding: 1px;
+    font-size: small;
+    color: white;
+    background-color: #444444;
+    opacity: 70%;
+}
+samp {
+    padding: 2px;
+    border-radius: 3px;
+    font-size: small;
+    background-color: #e2e2e2;
+}
+ul {
+    margin-top: 0%;
+}
+li {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+body {
+    font-family: monospace;
+    color: #272727;
+    background-color: #e2e2e2;
+}
+/* HEADER CLASSES */ 
+.rightheader {
+    display: flex;
+    position: fixed;
+    padding: 10px;
+    align-items: center;
+    right: 0;
+}
+.headerbtns {
+    background: none;
+    border: none;
+}
+/* H2 MENU */
+.h2menubtns {
+    padding: 0;
+    font-size: 19.5px;
+    font-family: monospace;
+    font-weight: 130;
+    text-decoration: underline;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.h2menubtns.selectedbtn {
+    color: #444444;
+}
+/* INLINE DIV */
+.inlinediv > * {
+    display: inline;
+}
+.inlinedivtext {
+    font-family: sans-serif;
+    font-size: small;
+    color: #c5c5c5;
+}
+/* ABOVE TEXTFIELD BUTTONS */
+button#keyboardModeBtn {
+    border: lightseagreen solid 1px;
+    border-radius: 3px;
+    color:lightseagreen;
+}
+button#keyboardModeBtn.disabled {
+    border: indianred solid 1px;
+    color: indianred;
+}
+/* BELOW TEXTFIELD BUTTONS */
+button#copyAllBtn {
+    border: palevioletred solid 1px;
+    color: palevioletred;
+}
+button#clearBtn {
+    border: indianred solid 1px;
+    color: indianred;
+}
+/* SELECTION BUTTONS */
+.selectionbuttonsdiv::-webkit-scrollbar {
+display: none;
+}
+.selectionbuttonsdiv {
+    width: 996px;
+    font-size: 0;
+    overflow-x: auto;
+}
+.selectionbuttonsdiv > * {
+    display: none;
+}
+.selectionbuttonsdiv.activediv {
+    display: flex;
+    height: max-content;
+    align-items: center;
+}
+.selectionbuttonsdiv.activediv > * {
+    display: inline !important;
+}
+button.selectionbtn {
+    margin-left: 0;
+    margin-right: 0;
+    border: #272727 solid 1px;
+    border-bottom: none;
+    border-radius: 3px;
+    background: none;
+    color: #272727;
+}
+button.fontbtns {
+    height: 22px;
+}
+button.selectedfontbtn {
+    border: #272727 solid 1px;
+    border-bottom: none;
+    color: #272727;
+    background-color: #e2e2e2;
+}
+button.symbolbtns {
+    height: 22px;
+}
+button.emoticonbtns {
+    height: 25px;
+}
+/* SEARCH BOX */
+#searchBoxSymbols,#searchBoxEmoticons {
+    padding: 3px 6px;
+    width: 130px;
+    border: #272727 solid 1px;
+    border-bottom: none;
+    border-radius: 3px;
+    background: none;
+    outline: none;
+}
+#searchBoxEmoticons {
+    height: 19px;
+}
+/* FONT AREA */
+.fontarea {
+    width: 990px;
+    height: 150px;
+    padding: 2px;
+    border: #272727 solid 1px;
+}
+textarea[id=textField],textarea[id=textField]:focus {
+    position: relative;
+    display: block;
+    width: 99%;
+    height: 96%;
+    margin: 0 auto;
+    border: none;
+    outline-width: 0;
+    font-family: sans-serif;
+    resize: none;
+}
+div#textField, div#textField:focus {
+    position: relative;
+    display: block;
+    width: 99%;
+    height: 96%;
+    margin: 0 auto;
+    border: none;
+    outline-width: 0;
+    font-family: sans-serif;
+    font-size: small;
+}
+/* CONTENT DIV */
+.abovecontent { /* not in use */
+    position: relative;
+    top: 0;
+    width: 100%;
+    /* header is 60px height */
+    height: 80px;
+    background-color: #272727;
+    opacity: 20%;
+}
+.content {
+    position: relative;
+    top: 60px;
+    margin: 0 auto;
+    width: 1000px;
+    padding: 20px;
+    border: #c5c5c5 solid 1px;
+    background-color: white;
+}
