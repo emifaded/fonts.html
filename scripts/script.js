@@ -166,7 +166,7 @@ window.onload = function() { // declare variables
     });
     emoticonselectdiv.addEventListener("wheel", function (event) {
         if (isTrackpad == false) {
-            if (event.deltaY > 0) emoticons.scrollLeft += 20;
+            if (event.deltaY > 0) emoticonselectdiv.scrollLeft += 20;
             else emoticonselectdiv.scrollLeft -= 20;
         }
     });
@@ -390,11 +390,46 @@ function clickSymbol(btn) {
 
 // EMOTICONS MAP
 var emoticons = {
-    // KAOMOJI
+    /* KAOMOJI */
+    // happy
     "◕‿◕": ["cuteface","cute face","happy","smile","cute","kaomoji"],
-    "●ω●": ["owo","kaomoji"],
+    "٩(◕‿◕｡)۶": ["happy","cute","kaomoji"],
+    "(•ᴗ•)": ["smiley","smile","smily","happy","kaomoji"],
+    // cute
+    "●ω●": ["owo","kaomoji","cute","kaomoji"],
+    "(„ಡωಡ„)": ["blush","kaomoji"],
+    "(⊃｡•́‿•̀｡)⊃": ["hug","kaomoji"],
+    // love
+    "(≧◡≦) ♡": ["love","cute","kaomoji"],
+    "( ´ ▽ ` ).｡ｏ♡": ["loveecho","love echo","love","kaomoji"],
+    "(｡♥‿♥｡)": ["loveface","love face","love","cute","kaomoji"],
+    "ヽ(♡‿♡)ノ": ["lovejump","love jump","loveface","love face","love","kaomoji"],
+    "(づ￣ ³￣)づ": ["kiss","love","hug","kaomoji"],
+    "(¯ ³¯)♡": ["kiss","love","kaomoji"],
+    // flirt
+    "(｡•̀ᴗ-)✧": ["wink","kaomoji"],
+    // embarrassed
+    "＼(٥⁀▽⁀ )／": ["sweatsmile","sweat","embarrassed","kaomoji"],
+    // sad
     "ಥ﹏ಥ": ["cry","sad","kaomoji"],
-    // NON KAOMOJI
+    "(ಡ‸ಡ)": ["sad","cute","kaomoji"],
+    // angry
+    "ಠ_ಠ": ["mad","angry","death stare","glare","kaomoji"],
+    // reactions
+    "¯\\_(ツ)_/¯": ["shrug","kaomoji"],
+    "( ͡° ͜ʖ ͡°)": ["lenny","kaomoji"],
+    "( ° ʖ °)": ["lenny2","lenny","kaomoji"],
+    "( ͡°ω °)": ["lennyuwu","lenny uwu","lenny","kaomoji"],
+    // actions
+    "(╯°□°)╯︵ ┻━┻": ["tableflip","table flip","flip","kaomoji"],
+    "┬─┬ ノ( ゜-゜ノ)": ["unflip","tableflip","table flip","flip","kaomoji"],
+    "ᕕ( ᐛ )ᕗ": ["dance","kaomoji"],
+    "─=≡Σ((( つ＞＜)つ": ["hug","run","kaomoji"],
+    // animals
+    "^●ω●^ノ": ["kitty","cat","animal"],
+    "^uᆺu^ノ": ["kitty","cat","animal"],
+    "^✦ロ✦^ノ": ["kitty scream","kitty","cat","animal"],
+    /* NON KAOMOJI */
     // artists
     "【=◈︿◈=】": ["porter"],
     "(⎌ℕ⎌)": ["nurture","porter"],
