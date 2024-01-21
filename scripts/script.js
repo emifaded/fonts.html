@@ -298,7 +298,8 @@ var symbols = {
     "✈": ["plane"],
     // shapes and checkboxes
     "•": ["bullet","circle"],
-    "°": ["degree","circle"],
+    "°": ["degree","circle","small circle","smallcircle"],
+    "｡": ["circle","small circle","smallcircle"],
     "◉": ["circlefilled","circle","foodpip","food pip"],
     "◯": ["circlew","whitecircle","circlewhite","circle","foodpip","food pip"],
     "⨂": ["circlex","karma10"],
