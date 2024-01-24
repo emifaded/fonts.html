@@ -192,6 +192,15 @@ function selectMode(id) {
     var mode = id.slice(0, -4);
     var selectedDiv = document.getElementById(mode + "selectdiv");
     selectedDiv.classList.add("activediv");
+    // toggle display of show all buttons
+    var showallbtns = document.getElementsByClassName("showallbtns");
+    for (var i = 0; i < showallbtns.length; i++) {
+        showallbtns[i].classList.remove("activeshowallbtn");
+    }
+    if (mode != "font") { // show all fonts not implemented yet
+        var showallbtn = document.getElementById("showAll"+mode.charAt(0).toUpperCase()+mode.substring(1)+"sBtn");
+        showallbtn.classList.add("activeshowallbtn");
+    }
     textField.focus();
 }
 

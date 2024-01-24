@@ -99,6 +99,14 @@ body {
     font-size: small;
     color: #c5c5c5;
 }
+button.showallbtns.activeshowallbtn {
+    display: inline;
+    border-color: slategrey;
+    color: slategrey;
+}
+button.showallbtns {
+    display: none;
+}
 /* ABOVE TEXTFIELD BUTTONS */
 button#keyboardModeBtn {
     border: lightseagreen solid 1px;
