@@ -403,21 +403,23 @@ var emoticons = {
     /* KAOMOJI */
     // happy
     "◕‿◕": ["cuteface","cute face","happy","smile","cute","kaomoji"],
-    "٩(◕‿◕｡)۶": ["happy","cute","kaomoji"],
+    "٩(◕‿◕｡)۶": ["happy","happi","cute","kaomoji"],
     "(•ᴗ•)": ["smiley","smile","smily","happy","kaomoji"],
-    // cute
+    "✧⁠◝⁠(⁠⁰⁠▿⁠⁰⁠)⁠◜⁠✧": ["happy","celebrate","sparkles","joy","kaomoji"],
     "●ω●": ["owo","kaomoji","cute","kaomoji"],
-    "(„ಡωಡ„)": ["blush","kaomoji"],
-    "(⊃｡•́‿•̀｡)⊃": ["hug","kaomoji"],
     // love
     "(≧◡≦) ♡": ["love","cute","kaomoji"],
     "( ´ ▽ ` ).｡ｏ♡": ["loveecho","love echo","love","kaomoji"],
     "(｡♥‿♥｡)": ["loveface","love face","love","cute","kaomoji"],
     "ヽ(♡‿♡)ノ": ["lovejump","love jump","loveface","love face","love","kaomoji"],
-    "(づ￣ ³￣)づ": ["kiss","love","hug","kaomoji"],
-    "(¯ ³¯)♡": ["kiss","love","kaomoji"],
+    "(づ￣ ³￣)づ": ["kiss","mwah","muah","love","hug","kaomoji"],
+    "(¯ ³¯)♡": ["kiss","mwah","muah","love","kaomoji"],
+    "ლ⁠(⁠´⁠ ⁠❥⁠ ⁠`⁠ლ⁠)": ["kiss","love","mwah","muah","kaomoji"],
+    "ლ⁠(⁠◕⁠ω⁠◕⁠ლ⁠)": ["squeesh","squish","owo","fist","fists","grab","kaomoji"],
     // flirt
     "(｡•̀ᴗ-)✧": ["wink","kaomoji"],
+    // shy
+    "(„ಡωಡ„)": ["blush","shy","kaomoji"],
     // embarrassed
     "＼(٥⁀▽⁀ )／": ["sweatsmile","sweat","embarrassed","kaomoji"],
     // sad
@@ -425,20 +427,32 @@ var emoticons = {
     "(ಡ‸ಡ)": ["sad","cute","kaomoji"],
     // angry
     "ಠ_ಠ": ["mad","angry","death stare","glare","kaomoji"],
+    "(⁠⌐⁠■⁠-⁠■⁠)": ["kms","gun","suicide","kaomoji"],
     // reactions
     "¯\\_(ツ)_/¯": ["shrug","kaomoji"],
     "( ͡° ͜ʖ ͡°)": ["lenny","kaomoji"],
     "( ° ʖ °)": ["lenny2","lenny","kaomoji"],
     "( ͡°ω °)": ["lennyuwu","lenny uwu","lenny","kaomoji"],
+    "(⁠´⁠⊙⁠ω⁠⊙⁠`⁠)⁠！": ["owo","surprised","surprise","shock","kaomoji"],
+    "(⁠✿⁠☉⁠｡⁠☉⁠)": ["o.o","surprised","surprise","shock","kaomoji"],
     // actions
     "(╯°□°)╯︵ ┻━┻": ["tableflip","table flip","flip","kaomoji"],
     "┬─┬ ノ( ゜-゜ノ)": ["unflip","tableflip","table flip","flip","kaomoji"],
-    "ᕕ( ᐛ )ᕗ": ["dance","kaomoji"],
-    "─=≡Σ((( つ＞＜)つ": ["hug","run","kaomoji"],
+    "(⁠/⁠¯⁠◡⁠ ⁠‿⁠ ⁠◡⁠)⁠/⁠¯⁠ ⁠~⁠ ⁠┻⁠━⁠┻": ["unflip","tableflip","table flip","flip","kaomoji"],
+    "ᕕ( ᐛ )ᕗ": ["dance","dancing","kaomoji"],
+    "〜⁠(⁠꒪⁠꒳⁠꒪⁠)⁠〜": ["dance","dancing","owo","kaomoji"],
+    "ヘ⁠(⁠￣⁠ω⁠￣⁠ヘ⁠)": ["dance","dancing","-w-","kaomoji"],
+    "(⁠~⁠‾⁠▿⁠‾⁠)⁠~": ["dance","dancing","kaomoji"],
+    "(⁠･⁠ω⁠･⁠)⁠つ⁠⊂⁠(⁠･⁠ω⁠･⁠)": ["pat","headpat","head pat","kaomoji"],
+    "(⊃｡•́‿•̀｡)⊃": ["hug","kaomoji"],
+    "～⁠(⁠つ⁠ˆ⁠Д⁠ˆ⁠)⁠つ⁠｡⁠☆": ["starhug","star hug","star","hug","kaomoji"],
+    "(⁠･⁠–⁠･⁠)⁠ ⁠⁠(⁠･⁠◡⁠･⁠)⁠/": ["awkward","standing","kaomoji"],
+    "⁄⁠(⁠⁄⁠ ⁠⁄⁠•⁠⁄⁠-⁠⁄⁠•⁠⁄⁠ ⁠⁄⁠)⁠⁄": ["hiding","fenced","fence","wall","kaomoji"],
     // animals
-    "^●ω●^ノ": ["kitty","cat","animal"],
-    "^uᆺu^ノ": ["kitty","cat","animal"],
-    "^✦ロ✦^ノ": ["kitty scream","kitty","cat","animal"],
+    "^●ω●^ノ": ["kitty","cat","animal","cute","kaomoji"],
+    "^uᆺu^ノ": ["kitty","cat","animal","kaomoji"],
+    "^✦ロ✦^ノ": ["kitty scream","kitty","cat","animal","kaomoji"],
+    ":^｡◕‸◕｡^ノ": ["kitty","kitty sad","cat","sad","cute","kaomoji"],
     /* NON KAOMOJI */
     // artists
     "【=◈︿◈=】": ["porter"],
